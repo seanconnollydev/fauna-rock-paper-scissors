@@ -1,0 +1,20 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "0.0.1",
+  "description": "Rock paper scissors with FaunaDB",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build:fauna": "tsc --project tsconfig.fauna.json",
+    "fauna": "npm run build:fauna && fauna-gql",
+    "fauna:override": "npm run build:fauna && fauna-gql --override"
+  },
+  "dependencies": {
+    "dotenv-cli": "^4.0.0",
+    "fauna-gql-upload": "^1.7.0",
+    "faunadb": "^3.0.1",
+    "faunadb-fql-lib": "^0.11.1",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  }
+}

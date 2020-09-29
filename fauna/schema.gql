@@ -1,0 +1,15 @@
+type Query {
+  play(selection: Selection!): Result! @resolver(name: "play")
+}
+
+enum Selection {
+  Rock
+  Paper
+  Scissors
+}
+
+type Result @embedded {
+  selection: Selection
+  opponentSelection: Selection
+  message: String
+}
