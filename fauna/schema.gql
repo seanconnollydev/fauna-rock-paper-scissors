@@ -9,7 +9,7 @@ enum Selection {
 }
 
 type Result @embedded {
-  selection: Selection
-  opponentSelection: Selection
-  message: String
+  selection: Selection!
+  opponentSelection: Selection!
+  message: String!
 }

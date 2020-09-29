@@ -1,5 +1,5 @@
 import { query } from "faunadb";
-import { Debug, RandomString, Switch } from "faunadb-fql-lib";
+import { RandomString, Switch } from "faunadb-fql-lib";
 import DetermineResult from '../lib/DetermineResult';
 const { Lambda, Let, Query, Var } = query;
 
