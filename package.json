@@ -10,7 +10,6 @@
     "fauna:override": "npm run build:fauna && fauna-gql --override"
   },
   "dependencies": {
-    "dotenv-cli": "^4.0.0",
     "fauna-gql-upload": "^1.7.0",
     "faunadb": "^3.0.1",
     "faunadb-fql-lib": "^0.11.1",
