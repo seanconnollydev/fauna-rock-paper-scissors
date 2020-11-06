@@ -6,11 +6,11 @@
   "main": "index.js",
   "scripts": {
     "build:fauna": "tsc --project tsconfig.fauna.json",
-    "fauna": "npm run build:fauna && fauna-gql",
-    "fauna:override": "npm run build:fauna && fauna-gql --override"
+    "fauna": "fauna-gql",
+    "fauna:override": "fauna-gql --override"
   },
   "dependencies": {
-    "fauna-gql-upload": "^1.7.0",
+    "fauna-gql-upload": "^1.9.0-preview",
     "faunadb": "^3.0.1",
     "faunadb-fql-lib": "^0.11.1",
     "prettier": "^2.1.2",
